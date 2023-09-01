@@ -1,4 +1,4 @@
-from modal import Stub, web_endpoint
+from modal import web_endpoint
 import modal
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from fastapi import Depends, Request
