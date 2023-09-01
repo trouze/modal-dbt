@@ -1,9 +1,13 @@
 {
     "secrets": {
-        "MODAL-TOKEN": {
-            "description": "Modal API token needed to authenticate into the service.",
+        "MODAL-TOKEN-ID": {
+            "description": "Modal API token ID needed to authenticate into the service.",
             "documentationUrl": "https://modal.com/settings/tokens"
-        }
+        },
+        "MODAL-TOKEN-SECRET": {
+            "description": "Modal API token secret needed to authenticate into the service.",
+            "documentationUrl": "https://modal.com/settings/tokens"
+        }        
     },
     "name": "Codespaces modal-dbt CLI Starter",
     "extensions": [
@@ -37,4 +41,5 @@
         "storage": "32gb"
     },
     "onCreateCommand": "python -m pip install -r requirements.txt",
+    "postStartCommand": "modal token set --token-id $MODAL-TOKEN-ID --token-secret $MODAL-TOKEN-SECRET"
 }
