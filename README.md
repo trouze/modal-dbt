@@ -1,5 +1,5 @@
 # modal-dbt
-This repo gives some code to run dbt jobs/actions using [modal](modal.com) which is a serverless application framework.
+This repo gives some code to run dbt jobs/actions using [modal](modal.com) which is a serverless application framework. You can test it out by creating a codespace, starting [here](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=685843424&skip_quickstart=true&template=false)
 
 deploy the run_dbt stub via:
 
