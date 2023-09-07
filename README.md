@@ -4,7 +4,7 @@ This repo gives some code to run dbt jobs/actions using [modal](modal.com) which
 deploy the run_dbt stub via:
 
 ```
-modal deploy dbt_job.py
+modal deploy run_dbt.py
 ```
 
 You'll then need to add [secrets](https://modal.com/docs/guide/secrets) to Modal for database connection credentials (they get passed as env_vars to my [profiles.yml](https://github.com/trouze/dbt-slim-ci/blob/main/profiles.yml)). You should add a web endpoint authentication token as we'll use this to authenticate requests to our run_dbt function triggered via a curl request.
